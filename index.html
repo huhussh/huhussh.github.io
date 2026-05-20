@@ -2,19 +2,110 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的个人主页</title>
     <style>
-        body { font-family: Arial; max-width: 800px; margin: 50px auto; padding: 0 20px; }
-        h1 { color: #2c3e50; }
-        .info { line-height: 1.8; font-size: 16px; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft Yahei", sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .card {
+            background: #fff;
+            width: 100%;
+            max-width: 500px;
+            padding: 40px 35px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            text-align: center;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            object-fit: cover;
+            border: 4px solid #409eff;
+        }
+        h1 {
+            font-size: 28px;
+            color: #222;
+            margin-bottom: 25px;
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 15px;
+            color: #555;
+            margin: 12px 0;
+        }
+        .intro {
+            margin: 30px 0;
+            line-height: 1.8;
+            color: #666;
+            text-align: left;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+        .btn-box {
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 26px;
+            background: #409eff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s ease;
+            margin: 0 6px;
+        }
+        .btn:hover {
+            background: #2b85e4;
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body>
-    <h1> 大家好，我是尊贵的烧水壶大王</h1>
-    <div class="info">
-        <p>📧 邮箱：S739773950@gmail.com</p>
-        <p>🔗 GitHub：https://github.com/huhussh</p>
-        <p>📝 个人简介：冷酷的水瓶哥~</p>
+    <div class="card">
+        <!-- blob:https://www.doubao.com/4ee37c95-944d-4534-9ee0-bf83edd11757 -->
+        <img class="avatar" src="https://picsum.photos/120/120" alt="头像">
+        <h1>尊贵的烧水壶大王</h1>
+
+        <div class="info-item">
+            <span>📧</span>
+            <span>邮箱：S739773950@gmail.com</span>
+        </div>
+        <div class="info-item">
+            <span>📍</span>
+            <span>所在地：上海杨浦</span>
+        </div>
+        <div class="info-item">
+            <span>💬</span>
+            <span>微信：S_Jan28h</span>
+        </div>
+
+        <div class="intro">
+            <strong>个人简介</strong><br>
+            十分冷酷的水瓶哥～
+        </div>
+
+        <div class="btn-box">
+            <a href="https://github.com/huhussh" class="btn">我的GitHub</a>
+            <a href="#" class="btn">联系我</a>
+        </div>
     </div>
 </body>
 </html>
